@@ -1,15 +1,12 @@
-video{
-    width: 720;
-    height: 1620;
-}
+
 body{
   margin: 0;
   padding: 0;
   background: #FCB0CB;
 }
 .slidershow{
-  width: 360px;
-  height: 480px;
+  width: 560px;
+  height: 880px;
   overflow: hidden;
 }
 .middle{
