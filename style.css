@@ -5,8 +5,8 @@ body{
   background: #FCB0CB;
 }
 .slidershow{
-  width: 560px;
-  height: 880px;
+  width: 560;
+  height: 880;
   overflow: hidden;
 }
 .middle{
