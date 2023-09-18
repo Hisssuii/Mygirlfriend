@@ -1,485 +1,120 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Portrait</title>
     <style>
-        
-
-    
         /* Default styles for desktop */
-/* Your desktop styles go here */
+        /* Your desktop styles go here */
 
-/* Media query for tablets (adjust the max-width as needed) */
-@media screen and (max-width: 1024x) {
-    /* Tablet styles */
-    /* Adjust layout and styles for tablets */
-}
+        /* Media query for tablets (adjust the max-width as needed) */
+        @media screen and (max-width: 1024px) {
+            /* Tablet styles */
+            /* Adjust layout and styles for tablets */
+        }
 
-/* Media query for mobile devices (adjust the max-width as needed) */
-@media screen and (max-width: 722px) {
-    /* Mobile styles */
-    /* Adjust layout and styles for mobile devices */
-}
+        /* Media query for mobile devices (adjust the max-width as needed) */
+        @media screen and (max-width: 722px) {
+            /* Mobile styles */
+            /* Adjust layout and styles for mobile devices */
+        }
 
-        .text-portrait {
+        #looping-paragraph {
+            font-size: 2px; /* Adjust font size as needed */
+            line-height: .9; /* Adjust line height for readability */
+            height: 100vh;
+            overflow: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-image: url(12.jpeg);
-            background-size: 100%, 100%;
-            color: transparent;
-            -webkit-background-clip: text;
+            background-size: cover; /* Use "cover" to fill the entire element with the image */
             background-clip: text;
-            font-size: 4px;
-            position: relative;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradientColorChange 10s linear infinite;
             z-index: 1;
         }
 
-#previousButtonImg { 
-    position: absolute; 
-    bottom: 95%; /* Adjust as needed */ 
-    left: 5%; /* Adjust as needed */ 
-    background: transparent; 
-    border: none; 
-    padding: 0; 
-    cursor: pointer; 
-    width: 30px; /* Adjust the width as needed for your smaller button */ 
-    height: 30px; /* Adjust the height as needed for your smaller button */
-     z-index: 2; /* Place the button in front of the text */ }
+        @keyframes gradientColorChange {
+            50% {
+                color: transparent;
+            }
+            100% {
+                color: #ffffff; /* Change to the background color you desire */
+            }
+        }
+
+        #previousButtonImg {
+            position: fixed;
+            bottom: 95%;
+            left: 80%;
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
-   <i><p class="text-portrait">by
-       Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me
-       Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me Stay for tonight if you want to I can show you what my dreams are made of As I'm dreamin' of your face I've been away for a long time Such a long time, and I miss you there I can't imagine bein' anywhere else I can't imagine bein' anywhere else but here How the hell did you ever pick me? Honestly, I could sing you a song But I don't think words can express your beauty It's singing to me How the hell did we end up like this? You bring out the beast in me I fell in love from the moment we kissed Since then, we've been history They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me It goes to show, I hope that you know that you are What my dreams are made of Can't fall asleep, can't fall asleep I lie in my bed awake, in my bed awake at night As I dream of you I'll fall in love, you'll fall in love It could mean everything, everything to me I can't imagine bein' anywhere else They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me The way that we are is the reason I stay As long as you're here with me, I know I'll be okay The way that we are is the reason I stay As long as you're here with me, I know I'll be okay They say that love is forever Your forever is all that I need (it's all that I need) Please stay as long as you need Can't promise that things won't be broken But I swear that I will never leave (I will never leave) Please stay forever with me They say that love is forever (I was created to love just one, baby) Your forever is all that I need (I couldn't love just anyone) (I was created to love just one girl) Please stay as long as you need (I couldn't love just anyone) Can't promise that things won't be broken (I was created to love just one, baby) But I swear that I will never leave (I couldn't love just anyone) (I was created to love just one girl) Please stay forever with me
-       Stay for tonight if you want to
-I can show you what my dreams are made of
-As I'm dreamin' of your face
-I've been away for a long time
-Such a long time, and I miss you there
-I can't imagine bein' anywhere else
-I can't imagine bein' anywhere else but here
+    <i>
+    <div id="looping-paragraph">
+        <!-- This is where the looping content will be added -->
+    </div>
 
-How the hell did you ever pick me?
-Honestly, I could sing you a song
-But I don't think words can express your beauty
-It's singing to me
-How the hell did we end up like this?
-You bring out the beast in me
-I fell in love from the moment we kissed
-Since then, we've been history
+    <!-- JavaScript to generate and append content to the paragraph -->
+    <script>
+        const loopingParagraph = document.getElementById("looping-paragraph");
+        const loremIpsum = `Sa pag gising ko tila himig mo ang bungad ng araw ko
+Pag mulat ng mata jusko eto may muta pa ako ugh
+Teka ano na nga ba san na ba papunta
+Lungkot nang buhay ko'y talagang grabe na
+Hanggang saan ba aabot ang panaginip ko
+Sa isang babaeng umaalon ang kanyang buhok
+Para bang gusto ko na tumakas talaga sa
+Isang bangungot na binuo ko nang mag isa
+Habang ako'y papatulog na dapat na ng mahimbing
+Ako'y nappraning at napapailing sa
+Mga bagay na iniisip ko sa tuwing ako'y nababato
+Bakit ganto naninigas ang ulo ko
+Tumayo nalang bigla ang aking buhok tila ba parang May isang babae na nakatayo sa sulok
+At di na makalagaw ang aking
+Nararamdamdam na para bang may humahaplos na
+Sa aking tiyan Kasabay nitoy hawak ko na ang isang mainit na uhhh isang tasang kape
+Bakit ganto ba pre hindi mapakali sa Tuwing ako'y nag iisa wala na akong pake
+Para kang bahaghari Sa liwanag iyong nadali
+Kung hindi ikaw ang pinangako mabuti nalang na maging isang pari Sa kamandag na taglay ay grabe
+Walang sinabe mga babae, sa karilagan, kapag dumaan Kasalanan ko nanaman dahil naakit
+Sapula mo na labi sana nakatitig ka sa'kin palagi
+At sa pagdilat sa umaga tinig mo ang panggising sakin Na parang pelikula, di na kaylangan mag cinema Ikaw ang buong istorya, sabay boses mo ang nagsisillbi na musika Sining sa museo na tanging diyos lamang ang nagpinta Nakita kita naparang
+anghel, para sakin at di sa iba Ang hirap na magbida, ang isa na extra Sa litrato na di para sa kanya`; // Your long text here
 
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
+        function fillScreenWithParagraph() {
+            const windowHeight = window.innerHeight;
+            let maxScrollHeight = loopingParagraph.scrollHeight;
+            let paragraphContent = "";
 
-It goes to show, I hope that you know that you are
-What my dreams are made of
-Can't fall asleep, can't fall asleep
-I lie in my bed awake, in my bed awake at night
-As I dream of you
-I'll fall in love, you'll fall in love
-It could mean everything, everything to me
-I can't imagine bein' anywhere else
+            while (maxScrollHeight <= windowHeight) {
+                paragraphContent += loremIpsum;
+                loopingParagraph.innerHTML = paragraphContent;
+                maxScrollHeight = loopingParagraph.scrollHeight;
+            }
+        }
 
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-They say that love is forever
-(I was created to love just one, baby) Your forever is all that I need
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay as long as you need
-(I couldn't love just anyone) Can't promise that things won't be broken
-(I was created to love just one, baby) But I swear that I will never leave
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay forever with me
-
-Stay for tonight if you want to
-I can show you what my dreams are made of
-As I'm dreamin' of your face
-I've been away for a long time
-Such a long time, and I miss you there
-I can't imagine bein' anywhere else
-I can't imagine bein' anywhere else but here
-
-How the hell did you ever pick me?
-Honestly, I could sing you a song
-But I don't think words can express your beauty
-It's singing to me
-How the hell did we end up like this?
-You bring out the beast in me
-I fell in love from the moment we kissed
-Since then, we've been history
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-It goes to show, I hope that you know that you are
-What my dreams are made of
-Can't fall asleep, can't fall asleep
-I lie in my bed awake, in my bed awake at night
-As I dream of you
-I'll fall in love, you'll fall in love
-It could mean everything, everything to me
-I can't imagine bein' anywhere else
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-They say that love is forever
-(I was created to love just one, baby) Your forever is all that I need
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay as long as you need
-(I couldn't love just anyone) Can't promise that things won't be broken
-(I was created to love just one, baby) But I swear that I will never leave
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay forever with me
-
-Stay for tonight if you want to
-I can show you what my dreams are made of
-As I'm dreamin' of your face
-I've been away for a long time
-Such a long time, and I miss you there
-I can't imagine bein' anywhere else
-I can't imagine bein' anywhere else but here
-
-How the hell did you ever pick me?
-Honestly, I could sing you a song
-But I don't think words can express your beauty
-It's singing to me
-How the hell did we end up like this?
-You bring out the beast in me
-I fell in love from the moment we kissed
-Since then, we've been history
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-It goes to show, I hope that you know that you are
-What my dreams are made of
-Can't fall asleep, can't fall asleep
-I lie in my bed awake, in my bed awake at night
-As I dream of you
-I'll fall in love, you'll fall in love
-It could mean everything, everything to me
-I can't imagine bein' anywhere else
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-They say that love is forever
-(I was created to love just one, baby) Your forever is all that I need
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay as long as you need
-(I couldn't love just anyone) Can't promise that things won't be broken
-(I was created to love just one, baby) But I swear that I will never leave
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay forever with me
-Stay for tonight if you want to
-I can show you what my dreams are made of
-As I'm dreamin' of your face
-I've been away for a long time
-Such a long time, and I miss you there
-I can't imagine bein' anywhere else
-I can't imagine bein' anywhere else but here
-
-How the hell did you ever pick me?
-Honestly, I could sing you a song
-But I don't think words can express your beauty
-It's singing to me
-How the hell did we end up like this?
-You bring out the beast in me
-I fell in love from the moment we kissed
-Since then, we've been history
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-It goes to show, I hope that you know that you are
-What my dreams are made of
-Can't fall asleep, can't fall asleep
-I lie in my bed awake, in my bed awake at night
-As I dream of you
-I'll fall in love, you'll fall in love
-It could mean everything, everything to me
-I can't imagine bein' anywhere else
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-They say that love is forever
-(I was created to love just one, baby) Your forever is all that I need
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay as long as you need
-(I couldn't love just anyone) Can't promise that things won't be broken
-(I was created to love just one, baby) But I swear that I will never leave
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay forever with me
-Stay for tonight if you want to
-I can show you what my dreams are made of
-As I'm dreamin' of your face
-I've been away for a long time
-Such a long time, and I miss you there
-I can't imagine bein' anywhere else
-I can't imagine bein' anywhere else but here
-
-How the hell did you ever pick me?
-Honestly, I could sing you a song
-But I don't think words can express your beauty
-It's singing to me
-How the hell did we end up like this?
-You bring out the beast in me
-I fell in love from the moment we kissed
-Since then, we've been history
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-It goes to show, I hope that you know that you are
-What my dreams are made of
-Can't fall asleep, can't fall asleep
-I lie in my bed awake, in my bed awake at night
-As I dream of you
-I'll fall in love, you'll fall in love
-It could mean everything, everything to me
-I can't imagine bein' anywhere else
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-They say that love is forever
-(I was created to love just one, baby) Your forever is all that I need
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay as long as you need
-(I couldn't love just anyone) Can't promise that things won't be broken
-(I was created to love just one, baby) But I swear that I will never leave
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay forever with me
-
-Stay for tonight if you want to
-I can show you what my dreams are made of
-As I'm dreamin' of your face
-I've been away for a long time
-Such a long time, and I miss you there
-I can't imagine bein' anywhere else
-I can't imagine bein' anywhere else but here
-
-How the hell did you ever pick me?
-Honestly, I could sing you a song
-But I don't think words can express your beauty
-It's singing to me
-How the hell did we end up like this?
-You bring out the beast in me
-I fell in love from the moment we kissed
-Since then, we've been history
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-It goes to show, I hope that you know that you are
-What my dreams are made of
-Can't fall asleep, can't fall asleep
-I lie in my bed awake, in my bed awake at night
-As I dream of you
-I'll fall in love, you'll fall in love
-It could mean everything, everything to me
-I can't imagine bein' anywhere else
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-They say that love is forever
-(I was created to love just one, baby) Your forever is all that I need
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay as long as you need
-(I couldn't love just anyone) Can't promise that things won't be broken
-(I was created to love just one, baby) But I swear that I will never leave
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay forever with me
-Stay for tonight if you want to
-I can show you what my dreams are made of
-As I'm dreamin' of your face
-I've been away for a long time
-Such a long time, and I miss you there
-I can't imagine bein' anywhere else
-I can't imagine bein' anywhere else but here
-
-How the hell did you ever pick me?
-Honestly, I could sing you a song
-But I don't think words can express your beauty
-It's singing to me
-How the hell did we end up like this?
-You bring out the beast in me
-I fell in love from the moment we kissed
-Since then, we've been history
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-It goes to show, I hope that you know that you are
-What my dreams are made of
-Can't fall asleep, can't fall asleep
-I lie in my bed awake, in my bed awake at night
-As I dream of you
-I'll fall in love, you'll fall in love
-It could mean everything, everything to me
-I can't imagine bein' anywhere else
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-The way that we are is the reason I stay
-As long as you're here with me, I know I'll be okay
-
-They say that love is forever
-Your forever is all that I need (it's all that I need)
-Please stay as long as you need
-Can't promise that things won't be broken
-But I swear that I will never leave (I will never leave)
-Please stay forever with me
-
-They say that love is forever
-(I was created to love just one, baby) Your forever is all that I need
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay as long as you need
-(I couldn't love just anyone) Can't promise that things won't be broken
-(I was created to love just one, baby) But I swear that I will never leave
-(I couldn't love just anyone)
-(I was created to love just one girl) Please stay forever with me
-
-    </p></i>
-      <a href="index.html"> <img id="previousButtonImg" src="n1.png" alt="Next"> </a>
-      
+        // Call the function initially and on window resize
+        fillScreenWithParagraph();
+        window.addEventListener("resize", fillScreenWithParagraph);
     </script>
-   
+
+    <!-- Previous button -->
+    <a href="index.html">
+        <img id="previousButtonImg" src="n1.png" alt="Previous">
+    </a>
+    </i>
 </body>
 </html>
